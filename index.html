@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Velvet Mist | Luxury Perfume</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="logo">
+        <img src="logo.jpg" alt="Velvet Mist Logo" />
+        <span>Velvet Mist</span>
+      </div>
+
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#collection">Collection</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="smoke"></div>
+      <div class="smoke2"></div>
+
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Velvet Mist</h1>
+          <p>
+            Unveil the art of timeless fragrance — crafted for elegance and
+            allure.
+          </p>
+          <a href="#collection" class="btn">Explore Collection</a>
+        </div>
+        <div class="hero-img">
+          <img src="img.gif" alt="Perfume Bottle" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <h2>Our Essence</h2>
+      <p>
+        Velvet Mist is a contemporary fragrance house that captures emotion
+        through scent. Each perfume embodies luxury, balance, and bold
+        individuality — designed to linger in memory long after the moment
+        fades.
+      </p>
+    </section>
+
+    <!-- COLLECTION -->
+    <section class="collection" id="collection">
+      <h2>Signature Scents</h2>
+      <div class="collection-grid">
+        <div class="card">
+          <img src="img2.jpg" alt="" />
+          <h3>Rose Whisper</h3>
+          <p>Velvety roses with a touch of vanilla — romantic and delicate.</p>
+        </div>
+        <div class="card">
+          <img src="img2.jpg" alt="" />
+          <h3>Amber Dusk</h3>
+          <p>Deep amber blended with sandalwood and smoky undertones.</p>
+        </div>
+        <div class="card">
+          <img src="img3.jpg" alt="" />
+          <h3>Ocean Veil</h3>
+          <p>Refreshing marine notes meet white jasmine for serene clarity.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="pricing" id="pricing">
+      <h2>Choose Your Luxury</h2>
+      <div class="pricing-cards">
+        <div class="price-card">
+          <h3>Mini</h3>
+          <p>$39</p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+        <div class="price-card highlight">
+          <h3>Classic</h3>
+          <p>$79</p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+        <div class="price-card">
+          <h3>Deluxe</h3>
+          <p>$129</p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>© 2025 Velvet Mist — All Rights Reserved.</footer>
+
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const navMenu = document.getElementById("nav-menu");
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
